@@ -7,7 +7,7 @@ public class Task4 {
         long c = 11L;
         long m = 2^48L;
 
-        Stream<Long> generator = Stream.iterate(1L, x -> (a * x * c) % m);
+        Stream<Long> generator = Stream.iterate(1L, x -> 1 *(a * x + c) % m);
         generator.forEach(System.out::println);
 
     }
